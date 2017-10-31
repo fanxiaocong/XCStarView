@@ -18,13 +18,32 @@
 {
     XCStarViewConfigure *configure = [[XCStarViewConfigure alloc] init];
     
-    configure.onStarImage  = [UIImage imageNamed:@"icon_shoucang_s_sld"];
-    configure.offStarImage = [UIImage imageNamed:@"icon_shoucang_s_nm"];
+    configure.onStarImage  = [self imageWithBundleClass:[self class] imageName:@"icon_star_on"];
+    configure.offStarImage = [self imageWithBundleClass:[self class] imageName:@"icon_star_off"];
     configure.starCount    = 5;
     configure.starMargin   = 10;
     configure.canEdit      = YES;
     
     return configure;
+}
+
+#pragma mark - 🔒 👀 Privite Method 👀
+/**
+ *  通过 Bundle 所在的目录加载图片
+ *
+ *  @param cls          Bundle所在的类名
+ *  @param imageName    图片名称
+ */
++ (UIImage *)imageWithBundleClass:(Class)cls
+                        imageName:(NSString *)imageName
+{
+    NSInteger scale = [UIScreen mainScreen].scale;
+    
+    NSBundle *currentBundle = [NSBundle bundleForClass:cls];
+    NSString *bundleName =  @"XCStarView.bundle";
+    NSString *imagePath  = [currentBundle pathForResource: [NSString stringWithFormat:@"%@@%zdx", imageName, scale] ofType:@"png" inDirectory:bundleName];
+    
+    return [UIImage imageWithContentsOfFile:imagePath];
 }
 
 @end

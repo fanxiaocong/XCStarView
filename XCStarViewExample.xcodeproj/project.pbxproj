@@ -15,7 +15,8 @@
 		1E0891531E77D46D00FE43FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E0891511E77D46D00FE43FF /* LaunchScreen.storyboard */; };
 		1E08915E1E77D46D00FE43FF /* XCStarViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E08915D1E77D46D00FE43FF /* XCStarViewExampleTests.m */; };
 		1E0891691E77D46D00FE43FF /* XCStarViewExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0891681E77D46D00FE43FF /* XCStarViewExampleUITests.m */; };
-		1E08917D1E77D56700FE43FF /* XCStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E08917C1E77D56700FE43FF /* XCStarView.m */; };
+		1E1F00411FA82B3500746204 /* XCStarView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1E1F00401FA82AC600746204 /* XCStarView.bundle */; };
+		1E1F00421FA82B3B00746204 /* XCStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1F003D1FA82AC600746204 /* XCStarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +53,9 @@
 		1E0891641E77D46D00FE43FF /* XCStarViewExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCStarViewExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E0891681E77D46D00FE43FF /* XCStarViewExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCStarViewExampleUITests.m; sourceTree = "<group>"; };
 		1E08916A1E77D46D00FE43FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E08917B1E77D56700FE43FF /* XCStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCStarView.h; sourceTree = "<group>"; };
-		1E08917C1E77D56700FE43FF /* XCStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCStarView.m; sourceTree = "<group>"; };
+		1E1F003D1FA82AC600746204 /* XCStarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCStarView.m; sourceTree = "<group>"; };
+		1E1F003F1FA82AC600746204 /* XCStarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCStarView.h; sourceTree = "<group>"; };
+		1E1F00401FA82AC600746204 /* XCStarView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XCStarView.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +86,7 @@
 		1E0891371E77D46D00FE43FF = {
 			isa = PBXGroup;
 			children = (
-				1E08917A1E77D56700FE43FF /* XCStarView */,
+				1E1F003C1FA82AC600746204 /* XCStarView */,
 				1E0891421E77D46D00FE43FF /* XCStarViewExample */,
 				1E08915C1E77D46D00FE43FF /* XCStarViewExampleTests */,
 				1E0891671E77D46D00FE43FF /* XCStarViewExampleUITests */,
@@ -144,11 +146,12 @@
 			path = XCStarViewExampleUITests;
 			sourceTree = "<group>";
 		};
-		1E08917A1E77D56700FE43FF /* XCStarView */ = {
+		1E1F003C1FA82AC600746204 /* XCStarView */ = {
 			isa = PBXGroup;
 			children = (
-				1E08917B1E77D56700FE43FF /* XCStarView.h */,
-				1E08917C1E77D56700FE43FF /* XCStarView.m */,
+				1E1F003F1FA82AC600746204 /* XCStarView.h */,
+				1E1F003D1FA82AC600746204 /* XCStarView.m */,
+				1E1F00401FA82AC600746204 /* XCStarView.bundle */,
 			);
 			path = XCStarView;
 			sourceTree = "<group>";
@@ -215,7 +218,7 @@
 		1E0891381E77D46D00FE43FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "樊小聪";
 				TargetAttributes = {
 					1E08913F1E77D46D00FE43FF = {
@@ -259,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E1F00411FA82B3500746204 /* XCStarView.bundle in Resources */,
 				1E0891531E77D46D00FE43FF /* LaunchScreen.storyboard in Resources */,
 				1E0891501E77D46D00FE43FF /* Assets.xcassets in Resources */,
 				1E08914E1E77D46D00FE43FF /* Main.storyboard in Resources */,
@@ -286,10 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E1F00421FA82B3B00746204 /* XCStarView.m in Sources */,
 				1E08914B1E77D46D00FE43FF /* ViewController.m in Sources */,
 				1E0891481E77D46D00FE43FF /* AppDelegate.m in Sources */,
 				1E0891451E77D46D00FE43FF /* main.m in Sources */,
-				1E08917D1E77D56700FE43FF /* XCStarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +357,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -361,7 +367,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -400,7 +411,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -408,7 +421,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
