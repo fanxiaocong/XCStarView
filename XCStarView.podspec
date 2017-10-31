@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 	XCStarView,评星视图
                    DESC
 
-  s.homepage     = "https://github.com/fanxiaocong/XCStarView
+  s.homepage     = "https://github.com/fanxiaocong/XCStarView"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
