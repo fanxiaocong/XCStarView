@@ -118,6 +118,9 @@
             starImgView.bounds = CGRectMake(0, 0, starWH, starWH);
             [self addSubview:starImgView];
         }
+        
+        /// 默认 满分好评
+        [self updateValueWithPoint:CGPointMake(CGRectGetWidth(self.bounds), 0)];
     }
     else
     {
